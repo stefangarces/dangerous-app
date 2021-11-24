@@ -1,11 +1,16 @@
-import BasicCard from "./components/pokemonSearch";
-import PokemonSearchCard from "./components/pokemonSearch";
+import {Copyright} from "./components/Copyright";
+import {Navigation} from "./components/Navigation";
+import {Routes} from "./routes/Routes";
 
 function App() {
   return (
-    <div className="App">
-      <PokemonSearchCard />
-    </div>
+      <div>
+          <a>Hello dude!</a>
+          <Routes>
+              <Navigation />
+          </Routes>
+          <Copyright sx={{ mt: 5 }} />
+      </div>
   );
 }
 
