@@ -7,7 +7,8 @@ export const Navigation = () => {
     return (
         <div>
             <p onClick={() => navigate(RoutingPath.logInMenuView)}>Log in</p>
-            <p onClick={() => navigate(RoutingPath.signUpView)}>Sign up</p>
+            <p onClick={() => navigate(RoutingPath.signUpView)}>Sign up </p>
+            <p onClick={() => navigate(RoutingPath.sellObjectView)}>Sell</p>
             <p onClick={() => navigate(RoutingPath.transactionsView)}>Transactions</p>
         </div>
     )
