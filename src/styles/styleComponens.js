@@ -1,13 +1,8 @@
 import styled from "styled-components";
 
 export const CardStyle = styled.div`
-  overflow: hidden;
-  padding: 0 0 32px;
-  margin: 48px auto 0;
-  width: 300px;
-  font-family: Quicksand, arial, sans-serif;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
-  border-radius: 20px;
+display: flex;
+align-items: center;
 `
 
 export const CardHeader = styled.header`
@@ -44,3 +39,17 @@ export const InputForm = styled.form`
     border: 4px solid white;
     padding: 5px;
 `;
+
+export const lightTheme = {
+    body: '#E2E2E2',
+    text: '#363537',
+    toggleBorder: '#FFF',
+    gradient: 'linear-gradient(#39598A, #79D7ED)',
+}
+
+export const darkTheme = {
+    body: '#363537',
+    text: '#FAFAFA',
+    toggleBorder: '#6B8096',
+    gradient: 'linear-gradient(#091236, #1E215D)',
+}

@@ -1,7 +1,8 @@
 import * as React from "react";
+import {CardOptionsNote} from "../styles/styleComponens";
 
 export const Copyright = () => {
     return (
-        <h1>copyright</h1>
+        <CardOptionsNote>copyright © Unreal Media Group</CardOptionsNote>
     );
 }
