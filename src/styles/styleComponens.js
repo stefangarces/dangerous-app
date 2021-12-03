@@ -1,20 +1,9 @@
 import styled from "styled-components";
 
-export const CardStyle = styled.div`
+export const CenterContent = styled.div`
 display: flex;
 align-items: center;
 `
-
-export const CardHeader = styled.header`
-  padding-top: 32px;
-  padding-bottom: 32px;
-`;
-
-export const CardHeading = styled.h1`
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-`;
 
 export const CardOptionsNote = styled.small`
   padding-top: 8px;
@@ -40,16 +29,50 @@ export const InputForm = styled.form`
     padding: 5px;
 `;
 
-export const lightTheme = {
-    body: '#E2E2E2',
-    text: '#363537',
-    toggleBorder: '#FFF',
-    gradient: 'linear-gradient(#39598A, #79D7ED)',
-}
+export const Button = styled.button`
+    display: block;
+    width: 100%;
+    min-width: 50px;
+    max-width: 500px;
+    background: #ffffff;
+    border: 1px solid;
+    box-shadow: 2px 4px;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+      &:active{
+    transform:translateX(2px) translateY(2px);
+    box-shadow: 1px 2px;
+  }
+`
 
-export const darkTheme = {
-    body: '#363537',
-    text: '#FAFAFA',
-    toggleBorder: '#6B8096',
-    gradient: 'linear-gradient(#091236, #1E215D)',
-}
+export const BoxInner = styled.div`
+  position: relative;
+  padding: 40px;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+`
+
+export const BoxCard = styled.div`
+    width: 100%;
+    min-width: 50px;
+    max-width: 500px;
+    border: 1px solid;
+    box-shadow: 2px 4px;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    background-color: #8DB48E;
+`
+
+export const Background = styled.div`
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  background-size: cover;
+  background-color: ${props => props.color}
+`
