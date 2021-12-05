@@ -11,9 +11,11 @@ function App() {
       <Background>
           <GlobalStyles
               styles={{
-                  body: { backgroundColor: "#F5F5F5" }
-              }}
-          />
+              body:
+              { backgroundColor: "lightyellow",
+                fontFamily: "Spicy Rice" }
+
+          }} />
           <BoxCard>
               <img src={logo} />
           <UserProvider>

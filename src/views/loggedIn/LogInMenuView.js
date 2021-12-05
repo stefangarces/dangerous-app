@@ -1,13 +1,23 @@
-import {useContext} from "react";
-import {UserContext} from "../../shared/provider/UserProvider";
+import {NavigationLoggedIn} from "../../components/NavigationLoggedIn";
+import {useEffect, useState} from "react";
+import UserAPIService from "../../shared/api/service/UserAPIService";
+import {Roller} from "react-awesome-spinners";
 
 export const LogInMenuView = () => {
-    const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
+    const [serverResponse, setServerResponse] = useState()
+
+    useEffect(()=>getUserData())
+
+    const getUserData = async () => {
+        const response = await UserAPIService.getUserData()
+        setServerResponse(response)
+        console.log(response.data[0].name)
+    }
 
     return (
         <div>
-            <h1>Logged In</h1>
-            <input onChange={(event) => setAuthenticatedUser(event.target.value)} />
+            <h1>Welcome {serverResponse ? serverResponse.data[0].name : <Roller />}</h1>
+            <NavigationLoggedIn />
         </div>
     )
 }

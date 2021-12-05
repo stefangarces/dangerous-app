@@ -10,8 +10,6 @@ export const Navigation = () => {
             <BoxInner>
             <Button variant="contained" onClick={() => navigate(RoutingPath.logInMenuView)}>Log in</Button>
             <Button variant="contained" onClick={() => navigate(RoutingPath.signUpView)}>Sign up</Button>
-            <Button variant="contained" onClick={() => navigate(RoutingPath.sellObjectView)}>Sell</Button>
-            <Button variant="contained" onClick={() => navigate(RoutingPath.transactionsView)}>Transactions</Button>
             </BoxInner>
         </CenterContent>
     )

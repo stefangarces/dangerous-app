@@ -42,7 +42,7 @@ export const Button = styled.button`
     cursor: pointer;
       &:active{
     transform:translateX(2px) translateY(2px);
-    box-shadow: 1px 2px;
+    box-shadow: 0.5px 1.5px;
   }
 `
 
@@ -58,12 +58,14 @@ export const BoxCard = styled.div`
     width: 100%;
     min-width: 50px;
     max-width: 500px;
+    margin: 15px;
+    padding: 15px;
     border: 1px solid;
     box-shadow: 2px 4px;
     display:flex;
     align-items:center;
     flex-direction:column;
-    background-color: #8DB48E;
+    background-color: #FFFFFF;
 `
 
 export const Background = styled.div`

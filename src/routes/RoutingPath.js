@@ -1,8 +1,8 @@
-const logInMenuView = '/suchhomemuchwow'
-const signUpView = '/signUp'
-const sellOrPayView = '/api'
+const logInMenuView = '/login'
+const signUpView = '/signup'
+const sellOrPayView = '/sell&pay'
 const sellObjectView = '/sell'
-const transactionsView = '/api'
+const transactionsView = '/transactions'
 
 export default {
     logInMenuView,
