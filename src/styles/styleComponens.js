@@ -71,10 +71,10 @@ export const BoxCard = styled.div`
 export const Background = styled.div`
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
   position: relative;
   display:flex;
   align-items:center;
   flex-direction:column;
   background-size: cover;
-  background-color: ${props => props.color}
 `

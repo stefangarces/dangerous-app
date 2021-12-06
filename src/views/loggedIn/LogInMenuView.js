@@ -1,4 +1,3 @@
-import {NavigationLoggedIn} from "../../components/NavigationLoggedIn";
 import {useEffect, useState} from "react";
 import UserAPIService from "../../shared/api/service/UserAPIService";
 import {Roller} from "react-awesome-spinners";
@@ -6,7 +5,7 @@ import {Roller} from "react-awesome-spinners";
 export const LogInMenuView = () => {
     const [serverResponse, setServerResponse] = useState()
 
-    useEffect(()=>getUserData())
+    useEffect(()=>getUserData(), [])
 
     const getUserData = async () => {
         const response = await UserAPIService.getUserData()
@@ -17,7 +16,6 @@ export const LogInMenuView = () => {
     return (
         <div>
             <h1>Welcome {serverResponse ? serverResponse.data[0].name : <Roller />}</h1>
-            <NavigationLoggedIn />
         </div>
     )
 }
